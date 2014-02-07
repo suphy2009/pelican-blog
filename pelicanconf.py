@@ -54,6 +54,9 @@ GOOGLE_ANALYTICS = 'UA-47831467-1'
 
 MD_EXTENSIONS = (['codehilite(css_class=highlight)', 'extra', 'fenced_code', 'tables', 'sane_lists'])
 
+READERS = {
+        'html': None,
+}
 #STATIC_SAVE_AS = "static/"
 #拷贝静态目录 Pelican 就会将img目录拷贝到 output/static/
 STATIC_PATHS = [
@@ -63,7 +66,9 @@ STATIC_PATHS = [
 
 #拷贝静态文件
 EXTRA_PATH_METADATA = {
-    'extra/robots.txt': {'path': 'robots.txt'},
+        'extra/favicon.ico': { 'path': 'favicon.ico' },
+        'extra/robots.txt': {'path': 'robots.txt'},
+        'extra/googlec0086f9e29fad494.html': {'path': 'googlec0086f9e29fad494.html' },
     }
 
 PLUGIN_PATH = u"pelican-plugins"

@@ -1,0 +1,3 @@
+[submodule "output"]
+	path = output
+	url = https://github.com/suphy2009/suphy2009.github.io.git
