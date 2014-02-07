@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = u'suphy'
 SITENAME = u'suphy\' Blog'
-#SITEURL = 'http://suphy2009.github.io'
-SITEURL = 'http://localhost:8000'
+SITEURL = 'http://suphy2009.github.io'
+#SITEURL = 'http://localhost:8000'
 
 GITHUB_URL = 'https://github.com/suphy2009'
 ARCHIVES_URL = 'archives.html'
