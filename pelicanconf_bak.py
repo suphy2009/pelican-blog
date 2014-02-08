@@ -6,15 +6,13 @@ AUTHOR = u'suphy'
 SITENAME = u'suphy\' Blog'
 SITEURL = 'http://suphy2009.github.io'
 #SITEURL = 'http://localhost:8000'
-GITHUB_URL = 'https://github.com/suphy2009'
 
-ADDRESS = 'Hangzhou.China'
-MAIL = 'bww0815@gmail.com'
-GOOGLEPLUS_USER='https://plus.google.com/u/0/113100105918853159511'
-LINKEDIN_USER = 'http://www.linkedin.com/profile/view?id=273447004'
-FACEBOOK_USER = 'https://www.facebook.com/profile.php?id=100003251594803'
-ABOUT_TEXT = "About"
-ABOUT_LINK = 'about.html'
+GITHUB_URL = 'https://github.com/suphy2009'
+ARCHIVES_URL = 'archives.html'
+ARTICLE_URL = '{category}/{slug}.html'
+ARTICLE_SAVE_AS = ARTICLE_URL
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = PAGE_URL
 
 TIMEZONE = 'Asia/Shanghai'
 DATE_FORMATS = {
@@ -27,21 +25,13 @@ DEFAULT_PAGINATION = 6
 #使用目录名作为文章的分类名
 USE_FOLDER_AS_CATEGORY = True
 #DELETE_OUTPUT_DIRECTORY = True
-DEFAULT_CATEGORY = 'uncategorized'
+#DEFAULT_CATEGORY = 'uncategorized'
 #使用文件名作为文章或页面的slug
 FILENAME_METADATA = '(?P<slug>.*)'
 
-ARCHIVES_URL = 'archives.html'
-CATEGORIES_URL = 'categories.html'
-ARTICLE_URL = '{category}/{slug}.html'
-ARTICLE_SAVE_AS = ARTICLE_URL
-PAGE_URL = '{slug}.html'
-PAGE_SAVE_AS = PAGE_URL
-
 # feed config
 FEED_DOMAIN = SITEURL
-
-FEED_ALL_RSS = 'feeds/all.rss.xml'
+FEED_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -51,30 +41,23 @@ CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 #CATEGORY_FEED_ATOM = None
 #TRANSLATION_FEED_ATOM = None
 
-# Tag cloud
-TAG_CLOUD_STEPS = 4
-TAG_CLOUD_MAX_ITEMS = 100
-
-#THEME = 'pelican-themes/bootstrap2'
-#THEME = 'pelican-themes/pelican-bootstrap3'
+#THEME = 'tuxlite_tbs'
+#THEME = 'bootstrap2'
 THEME = 'pelican-themes/tuxlite_tbs'
-#THEME = 'pelican-themes/html5-dopetrope'
-#THEME = 'pelican-themes/blueidea'
-#THEME = '/Users/suphy/bak/pelican-themes/pelican-mockingbird'
-#THEME = '/Users/suphy/bak/pelican-themes/pelican-simplegrey'
-#MD_EXTENSIONS = (['codehilite(css_class=codehilite)', 'extra', 'fenced_code', 'tables', 'sane_lists'])
 
 RELATIVE_URLS = True
+#DISPLAY_CATEGORIES_ON_MENU = True
 
 DISQUS_SITENAME = 'suphy2009'
 
 GOOGLE_ANALYTICS = 'UA-47831467-1'
 
-GOOGLE_CUSTOM_SEARCH_SIDEBAR = '010153636864527898055:f3thbiahdzi'
+#MD_EXTENSIONS = (['codehilite(css_class=highlight)', 'extra', 'fenced_code', 'tables', 'sane_lists'])
 
 READERS = {
         'html': None,
 }
+#STATIC_SAVE_AS = "static/"
 #拷贝静态目录 Pelican 就会将img目录拷贝到 output/static/
 STATIC_PATHS = [
         'static',
@@ -89,10 +72,7 @@ EXTRA_PATH_METADATA = {
     }
 
 PLUGIN_PATH = u"pelican-plugins"
-PLUGINS = ["sitemap", "summary", "related_posts"]
-
-# For Related posts
-RELATED_POSTS_MAX = 5
+PLUGINS = ["sitemap", "summary"]
 
 ## 配置sitemap 插件
 SITEMAP = {
@@ -108,44 +88,6 @@ SITEMAP = {
         "pages": "monthly",
     }
 }
-
-
-#################For blueidea Theme###########################
-# Display pages list on the top menu
-DISPLAY_PAGES_ON_MENU = True
-
-# Display categories list on the top menu
-DISPLAY_CATEGORIES_ON_MENU = True
-
-# Display categories list as a submenu of the top menu
-DISPLAY_CATEGORIES_ON_SUBMENU = False
-
-# Display the category in the article's info
-DISPLAY_CATEGORIES_ON_POSTINFO = True
-
-# Display the author in the article's info
-DISPLAY_AUTHOR_ON_POSTINFO = False
-
-# Display the search form
-DISPLAY_SEARCH_FORM =True
-
-# Sort pages list by a given attribute
-#PAGES_SORT_ATTRIBUTE = 'Title'
-
-#################For pelican-bootstrap3 Theme###########################
-PYGMENTS_STYLE = 'solarizeddark'
-#Breadcrumbs
-DISPLAY_BREADCRUMBS = True
-DISPLAY_CATEGORY_IN_BREADCRUMBS = True
-# NavBar
-BOOTSTRAP_NAVBAR_INVERSE = True
-
-DISPLAY_TAGS_ON_SIDEBAR = True
-DISPLAY_CATEGORIES_ON_SIDEBAR = True
-DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
-DISQUS_NO_ID = True
-DISQUS_ID_PREFIX_SLUG = True
-DISQUS_DISPLAY_COUNTS = True
 
 LINKS =  (('Google', 'https://www.google.com/ncr'),
           ('Python', 'http://python.org/'),

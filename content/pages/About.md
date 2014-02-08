@@ -1,4 +1,4 @@
-title: About
+title: 关于
 date: 2014-02-05 14:10
 slug: about
 

@@ -1,9 +1,9 @@
 Date: 2014-02-06
 Title: (转) 用 Pelican 和 GitHub Pages 搭建个人博客
 Category: Tech
-Tags: pelican, blog, python
+Tags: pelican
 Slug: build_blog
-Summery: 用 Pelican 和 GitHub Pages 搭建免费的个人博客
+Summary: 用 Pelican 和 GitHub Pages 搭建免费的个人博客.
 
 ### Pelican 介绍
 

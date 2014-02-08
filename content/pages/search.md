@@ -1,4 +1,4 @@
-title: Search 
+title: 搜索
 date: 2013-07-12 22:33:58
 slug: search
 

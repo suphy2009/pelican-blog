@@ -36,10 +36,20 @@
 
         <div class="nav-collapse">
         <ul class="nav">
+            <li><a href="{{ SITEURL }}">首页</a></li>
+
+        {% if CATEGORIES_URL %}
+            <li><a href="{{ SITEURL }}/{{ CATEGORIES_URL }}">分类</a></li>
+        {% endif %}
+
+        {% if ARCHIVES_URL %}
+            <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">归档</a></li>
+        {% endif %}
+
         {% for title, link in MENUITEMS %}
             <li><a href="{{ link }}">{{ title }}</a></li>
         {% endfor %}
-            
+        
         {% if DISPLAY_PAGES_ON_MENU %}
         {% for page in PAGES %}
             <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
@@ -71,8 +81,8 @@
                 <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a>
                 <li><a href="{{ SITEURL }}/tags.html">Tags</a>
                 <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" rel="alternate">Atom feed</a></li>
-                {% if FEED_RSS %}
-                <li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" rel="alternate">RSS feed</a></li>
+                {% if FEED_ALL_RSS %}
+                <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" rel="alternate">RSS feed</a></li>
                 {% endif %}
             </ul>
             </div>

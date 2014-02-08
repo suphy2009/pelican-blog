@@ -1,8 +1,9 @@
 Title: Git submodule的使用
 Date: 2014-02-07 18:39
-Category: tech
-Tags: git,scm
+Category: Scm
+Tags: git
 Slug: scm-git-submodule
+Summary: Git submodule功能使得一个仓库可以用子目录的形式去包含一个外部项目的签出版本. 子模块维护它们自己的身份标记(identity); 
 
 
 #关于Git Submodule的使用

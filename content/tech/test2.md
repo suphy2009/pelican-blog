@@ -2,7 +2,7 @@ Date: 2014-02-05 14:35
 Modified: 2014-02-05 16:20
 Title: Markdown Dillinger
 Category: Tech
-Tags: markdown, Dillinger
+Tags: Markdown
 Slug: test2
 Summary: Dillingger is a cloud-enable HTML5 Markdown editro.
 
@@ -70,6 +70,8 @@ License
 ----
 
 MIT
+
+![image](../static/images/55.gif)
 
 
 **Free Software, Hell Yeah!**
