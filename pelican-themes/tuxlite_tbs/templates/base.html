@@ -80,7 +80,11 @@
             
                 <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a>
                 <li><a href="{{ SITEURL }}/tags.html">Tags</a>
+
+                {% if FEED_ALL_ATOM %}
                 <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" rel="alternate">Atom feed</a></li>
+                {% endif %}
+
                 {% if FEED_ALL_RSS %}
                 <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" rel="alternate">RSS feed</a></li>
                 {% endif %}
@@ -102,6 +106,18 @@
             </div>
             {% endif %}
 
+            {% if TAG_CLOUD_SHOW %}
+            <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">
+            <ul class="nav nav-list">
+                <li class="nav-header"> 
+                Tags
+                </li>
+                {% for tag in tag_cloud %}
+                     <li class="tag-{{ tag.1 }}"><a href="{{ SITEURL }}/{{ tag.0.url }}">{{ tag.0 }}</a></li>
+                {% endfor %}
+            </ul>
+            </div>
+            {% endif %}
 
             {% if LINKS %}
             <div class="well" style="padding: 8px 0; background-color: #FBFBFB;">

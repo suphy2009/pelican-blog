@@ -6,7 +6,7 @@ AUTHOR = u'suphy'
 SITENAME = u'suphy\' Blog'
 SITEURL = 'http://suphy2009.github.io'
 #SITEURL = 'http://localhost:8000'
-GITHUB_URL = 'https://github.com/suphy2009'
+#GITHUB_URL = 'https://github.com/suphy2009'
 
 ADDRESS = 'Hangzhou.China'
 MAIL = 'bww0815@gmail.com'
@@ -39,17 +39,17 @@ PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = PAGE_URL
 
 # feed config
-FEED_DOMAIN = SITEURL
+#FEED_DOMAIN = SITEURL
 
-FEED_ALL_RSS = 'feeds/all.rss.xml'
-CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
+#FEED_ALL_RSS = 'feeds/all.rss.xml'
+#CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
+#FEED_ALL_ATOM = 'feeds/all.atom.xml'
+#CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 # Feed generation is usually not desired when developing
-#FEED_ALL_ATOM = None
-#CATEGORY_FEED_ATOM = None
-#TRANSLATION_FEED_ATOM = None
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
 
 # Tag cloud
 TAG_CLOUD_STEPS = 4

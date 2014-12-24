@@ -59,7 +59,12 @@ Jekyll非常棒，可惜它基于Ruby。对于Python爱好者而言，基于Pyth
     
     This is the content of my super blog post.
 
-写完后，执行以下命令 `make html`，现在可以在output目录下查看生成的html文件了。
+写完后，执行以下命令，现在可以在output目录下查看生成的html文件了, 然后本机`http://127.0.0.1:8000`看到效果。
+
+```
+make publish
+make serve
+```
 
 ###创建Github Pages
 GitHub Pages分两种，一种是项目页面，可创建多个；另一种是用户页面，每个用户ID只能创建一个。两种都可以用来托管Pelican博客，这里以用户页面为例。
